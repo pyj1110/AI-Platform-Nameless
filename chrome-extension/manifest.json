@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Guide Overlay",
+  "version": "0.1.1",
+  "description": "chatgpt.com 안에서 초보자용 시각적 가이드 UI를 오버레이로 제공합니다.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://*.chatgpt.com/*",
+    "http://localhost:3000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:3000/*"],
+      "js": ["content/app-bridge.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://chatgpt.com/*", "https://*.chatgpt.com/*"],
+      "js": ["content/chatgpt-guide.js"],
+      "css": ["content/chatgpt-guide.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

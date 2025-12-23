@@ -1,0 +1,2092 @@
+{
+  "platforms": [
+    {
+      "id": 1,
+      "name": "Kling AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Multimodal"
+      ],
+      "description": "텍스트 및 이미지 기반으로 고품질 영상을 생성하는 AI 비디오 생성 플랫폼",
+      "url": "https://klingai.com",
+      "image_url": "/static/img/platforms/kling.png"
+    },
+    {
+      "id": 2,
+      "name": "Runway",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Editing",
+        "Multimodal"
+      ],
+      "description": "Gen-2 등 텍스트·이미지 기반 영상 생성 모델을 포함한 크리에이티브 AI 플랫폼",
+      "url": "https://runwayml.com",
+      "image_url": "/static/img/platforms/runway.png"
+    },
+    {
+      "id": 3,
+      "name": "Luma",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Physics-based"
+      ],
+      "description": "사실적인 물리 기반 영상 생성을 지원하는 AI 영상 생성 도구",
+      "url": "https://lumalabs.ai",
+      "image_url": "/static/img/platforms/luma.png"
+    },
+    {
+      "id": 4,
+      "name": "LTX Studio",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Workflow",
+        "Editing"
+      ],
+      "description": "스토리 기반 영상 제작을 지원하는 AI 영상 스튜디오",
+      "url": "https://ltx.studio",
+      "image_url": "/static/img/platforms/ltx.png"
+    },
+    {
+      "id": 5,
+      "name": "Omagic AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Generative AI",
+        "3D AI"
+      ],
+      "description": "이미지/로고 등을 업로드해 3D 및 CGI 스타일 동영상을 AI로 생성하는 플랫폼",
+      "url": "https://omagic.ai/",
+      "image_url": "/static/img/platforms/omagic.png"
+    },
+    {
+      "id": 6,
+      "name": "Hailuo AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Multimodal"
+      ],
+      "description": "중국 기반의 고품질 AI 영상 생성 플랫폼",
+      "url": "https://hailuoai.video",
+      "image_url": "/static/img/platforms/hailuo.png"
+    },
+    {
+      "id": 7,
+      "name": "Kaiber",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Style Transfer"
+      ],
+      "description": "음악과 비주얼을 결합한 AI 영상 생성 플랫폼",
+      "url": "https://kaiber.ai",
+      "image_url": "/static/img/platforms/kaiber.png"
+    },
+    {
+      "id": 8,
+      "name": "InVideo",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "Template-based"
+      ],
+      "description": "마케팅 및 SNS용 영상을 빠르게 제작하는 AI 플랫폼",
+      "url": "https://invideo.io",
+      "image_url": "/static/img/platforms/invideo.png"
+    },
+    {
+      "id": 9,
+      "name": "HeyGen",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "Avatar",
+        "TTS"
+      ],
+      "description": "AI 아바타를 활용한 프레젠테이션 및 설명 영상 제작 플랫폼",
+      "url": "https://www.heygen.com",
+      "image_url": "/static/img/platforms/heygen.png"
+    },
+    {
+      "id": 10,
+      "name": "Pictory",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "Summarization"
+      ],
+      "description": "텍스트 콘텐츠를 영상으로 자동 변환하는 AI 플랫폼",
+      "url": "https://pictory.ai",
+      "image_url": "/static/img/platforms/pictory.png"
+    },
+    {
+      "id": 11,
+      "name": "Pollo AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Multimodal"
+      ],
+      "description": "간단한 입력으로 영상을 생성하는 AI 플랫폼",
+      "url": "https://pollo.ai",
+      "image_url": "/static/img/platforms/pollo.png"
+    },
+    {
+      "id": 12,
+      "name": "PixVerse AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Multimodal"
+      ],
+      "description": "짧은 영상 및 SNS 콘텐츠 제작에 특화된 AI 플랫폼",
+      "url": "https://pixverse.ai",
+      "image_url": "/static/img/platforms/pixverse.png"
+    },
+    {
+      "id": 13,
+      "name": "Pika",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Multimodal"
+      ],
+      "description": "크리에이터 중심의 AI 영상 생성 플랫폼",
+      "url": "https://pika.art",
+      "image_url": "/static/img/platforms/pika.png"
+    },
+    {
+      "id": 14,
+      "name": "Haiper AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Automation",
+        "Multimodal"
+      ],
+      "description": "콘텐츠 제작 자동화를 지원하는 AI 플랫폼",
+      "url": "https://haiper.ai",
+      "image_url": "/static/img/platforms/haiper.png"
+    },
+    {
+      "id": 15,
+      "name": "Wan AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Open-source"
+      ],
+      "description": "AI 영상 생성 모델을 체험할 수 있는 공식 데모 플랫폼",
+      "url": "https://wan.video",
+      "image_url": "/static/img/platforms/wan.png"
+    },
+    {
+      "id": 16,
+      "name": "Vidu",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Multimodal"
+      ],
+      "description": "중국 기반의 고속 AI 영상 생성 플랫폼",
+      "url": "https://www.vidu.com",
+      "image_url": "/static/img/platforms/vidu.png"
+    },
+    {
+      "id": 17,
+      "name": "Genmo",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Experimental"
+      ],
+      "description": "창작자를 위한 실험적인 AI 영상 및 모션 생성 도구",
+      "url": "https://genmo.ai",
+      "image_url": "/static/img/platforms/genmo.png"
+    },
+    {
+      "id": 18,
+      "name": "DeeVid AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Editing",
+        "Multimodal"
+      ],
+      "description": "자동 영상 생성과 편집을 지원하는 AI 플랫폼",
+      "url": "https://deevid.ai",
+      "image_url": "/static/img/platforms/deevid.png"
+    },
+    {
+      "id": 19,
+      "name": "Steve AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Template-based",
+        "Automation"
+      ],
+      "description": "광고 및 마케팅용 영상을 빠르게 제작하는 AI 플랫폼",
+      "url": "https://www.steve.ai",
+      "image_url": "/static/img/platforms/steve.png"
+    },
+    {
+      "id": 20,
+      "name": "Synthesia",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "Avatar",
+        "TTS"
+      ],
+      "description": "AI 아바타를 활용한 기업용 영상 제작 플랫폼",
+      "url": "https://www.synthesia.io",
+      "image_url": "/static/img/platforms/synthesia.png"
+    },
+    {
+      "id": 21,
+      "name": "Veed",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "Editing"
+      ],
+      "description": "온라인 기반 AI 영상 편집 및 자막 생성 플랫폼",
+      "url": "https://www.veed.io",
+      "image_url": "/static/img/platforms/veed.png"
+    },
+    {
+      "id": 22,
+      "name": "Fliki",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "TTS"
+      ],
+      "description": "텍스트를 음성과 영상으로 변환하는 AI 플랫폼",
+      "url": "https://fliki.ai",
+      "image_url": "/static/img/platforms/fliki.png"
+    },
+    {
+      "id": 23,
+      "name": "Bhuman",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "Avatar",
+        "Personalization"
+      ],
+      "description": "개인화된 AI 영상 메시지를 대량으로 생성하는 플랫폼",
+      "url": "https://www.bhuman.ai",
+      "image_url": "/static/img/platforms/bhuman.png"
+    },
+    {
+      "id": 24,
+      "name": "D-ID",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Avatar",
+        "Image-to-Video"
+      ],
+      "description": "정적인 이미지를 말하는 영상으로 변환하는 AI 플랫폼",
+      "url": "https://www.d-id.com",
+      "image_url": "/static/img/platforms/did.png"
+    },
+    {
+      "id": 25,
+      "name": "Kapwing",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Editing",
+        "Collaboration"
+      ],
+      "description": "팀 협업에 특화된 온라인 영상 편집 플랫폼",
+      "url": "https://www.kapwing.com",
+      "image_url": "/static/img/platforms/kapwing.png"
+    },
+    {
+      "id": 26,
+      "name": "Vidnoz",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "LLM",
+        "Avatar",
+        "TTS"
+      ],
+      "description": "프레젠테이션 및 설명 영상을 위한 AI 플랫폼",
+      "url": "https://www.vidnoz.com",
+      "image_url": "/static/img/platforms/vidnoz.png"
+    },
+    {
+      "id": 27,
+      "name": "Viggle AI",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Motion Transfer",
+        "Diffusion"
+      ],
+      "description": "캐릭터 모션 중심의 AI 영상 생성 플랫폼",
+      "url": "https://viggle.ai",
+      "image_url": "/static/img/platforms/viggle.png"
+    },
+    {
+      "id": 28,
+      "name": "Hedra",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion",
+        "Character-based"
+      ],
+      "description": "캐릭터 기반의 AI 영상 생성 플랫폼",
+      "url": "https://www.hedra.com",
+      "image_url": "/static/img/platforms/hedra.png"
+    },
+    {
+      "id": 29,
+      "name": "TopView",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Marketing Optimization",
+        "Automation"
+      ],
+      "description": "숏폼 광고 및 커머스 영상을 생성하는 AI 플랫폼",
+      "url": "https://www.topview.ai",
+      "image_url": "/static/img/platforms/topview.png"
+    },
+    {
+      "id": 30,
+      "name": "Seadance",
+      "category": "AI Video",
+      "modality": [
+        "Video"
+      ],
+      "technology": [
+        "Diffusion"
+      ],
+      "description": "텍스트 또는 이미지를 입력으로 받아 AI가 동영상을 생성하는 영상 생성 서비스",
+      "url": "https://seadanceai.com/ko",
+      "image_url": "/static/img/platforms/seadance.png"
+    },
+    {
+      "id": 31,
+      "name": "ACE Step",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "단계별 음악 제작을 지원하는 AI 음악 생성 플랫폼",
+      "url": "https://acestep.io",
+      "image_url": "/static/img/platforms/acestep.png"
+    },
+    {
+      "id": 32,
+      "name": "AIMusicGen",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation",
+        "LLM"
+      ],
+      "description": "텍스트 프롬프트 기반 AI 음악 생성 플랫폼",
+      "url": "https://aimusicgen.ai",
+      "image_url": "/static/img/platforms/aimusicgen.png"
+    },
+    {
+      "id": 33,
+      "name": "AISong Fun",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation",
+        "LLM"
+      ],
+      "description": "간단한 입력으로 노래를 생성하는 AI 서비스",
+      "url": "https://aisong.fun/ko",
+      "image_url": "/static/img/platforms/aisongfun.png"
+    },
+    {
+      "id": 34,
+      "name": "AIVA",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Composition"
+      ],
+      "description": "클래식·영화 음악 작곡에 특화된 AI 작곡 플랫폼",
+      "url": "https://www.aiva.ai",
+      "image_url": "/static/img/platforms/aiva.png"
+    },
+    {
+      "id": 35,
+      "name": "Amper Music",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "영상 제작자를 위한 AI 배경음악 생성 서비스",
+      "url": "https://ampermusic.ai/",
+      "image_url": "/static/img/platforms/ampermusic.png"
+    },
+    {
+      "id": 36,
+      "name": "Beatoven AI",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "영상·팟캐스트용 배경음악 생성에 특화된 AI 플랫폼",
+      "url": "https://www.beatoven.ai",
+      "image_url": "/static/img/platforms/beatoven.png"
+    },
+    {
+      "id": 37,
+      "name": "Boomy",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "초보자도 쉽게 음악을 만들 수 있는 AI 플랫폼",
+      "url": "https://boomy.com",
+      "image_url": "/static/img/platforms/boomy.png"
+    },
+    {
+      "id": 38,
+      "name": "Cuzi AI",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "간단한 입력으로 음악을 생성하는 AI 플랫폼",
+      "url": "https://cuzi.ai/",
+      "image_url": "/static/img/platforms/cuzi.png"
+    },
+    {
+      "id": 39,
+      "name": "Ecrett Music",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "로열티 프리 AI 배경음악 생성 플랫폼",
+      "url": "https://ecrettmusic.com",
+      "image_url": "/static/img/platforms/ecrettmusic.png"
+    },
+    {
+      "id": 40,
+      "name": "Endel",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Generative Audio"
+      ],
+      "description": "집중·휴식·수면을 위한 AI 생성 사운드 플랫폼",
+      "url": "https://endel.io",
+      "image_url": "/static/img/platforms/endel.png"
+    },
+    {
+      "id": 41,
+      "name": "Loudly",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "콘텐츠 제작자를 위한 로열티 프리 AI 음악 플랫폼",
+      "url": "https://www.loudly.com",
+      "image_url": "/static/img/platforms/loudly.png"
+    },
+    {
+      "id": 42,
+      "name": "Mubert",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Generative Music"
+      ],
+      "description": "실시간으로 음악을 생성하는 AI 음악 플랫폼",
+      "url": "https://mubert.com",
+      "image_url": "/static/img/platforms/mubert.png"
+    },
+    {
+      "id": 43,
+      "name": "Musicful",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "간편한 워크플로의 AI 음악 제작 도구",
+      "url": "https://www.musicful.ai/",
+      "image_url": "/static/img/platforms/musicful.png"
+    },
+    {
+      "id": 44,
+      "name": "Riffusion",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Diffusion",
+        "Music Generation"
+      ],
+      "description": "확산 모델을 활용한 실시간 음악 생성 플랫폼",
+      "url": "https://www.riffusion.com",
+      "image_url": "/static/img/platforms/riffusion.png"
+    },
+    {
+      "id": 45,
+      "name": "SongGen",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "간단한 설정으로 노래를 생성하는 AI 도구",
+      "url": "https://songgen.ai/",
+      "image_url": "/static/img/platforms/songgen.png"
+    },
+    {
+      "id": 46,
+      "name": "SongR",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation",
+        "LLM"
+      ],
+      "description": "텍스트 프롬프트 기반 노래 생성 서비스",
+      "url": "https://songr.ai",
+      "image_url": "/static/img/platforms/songr.png"
+    },
+    {
+      "id": 47,
+      "name": "Soundful",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "크리에이터를 위한 AI 음악 생성 플랫폼",
+      "url": "https://soundful.com",
+      "image_url": "/static/img/platforms/soundful.png"
+    },
+    {
+      "id": 48,
+      "name": "Soundraw",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation"
+      ],
+      "description": "영상·광고용 배경음악 생성에 특화된 AI 플랫폼",
+      "url": "https://soundraw.io",
+      "image_url": "/static/img/platforms/soundraw.png"
+    },
+    {
+      "id": 49,
+      "name": "Suno AI",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation",
+        "LLM"
+      ],
+      "description": "가사부터 보컬까지 자동 생성하는 AI 음악 플랫폼",
+      "url": "https://suno.ai",
+      "image_url": "/static/img/platforms/suno.png"
+    },
+    {
+      "id": 50,
+      "name": "Udio",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation",
+        "LLM"
+      ],
+      "description": "고품질 보컬과 곡 구조를 생성하는 AI 음악 플랫폼",
+      "url": "https://www.udio.com",
+      "image_url": "/static/img/platforms/udio.png"
+    },
+    {
+      "id": 51,
+      "name": "MusicGPT",
+      "category": "AI Audio",
+      "modality": [
+        "Audio"
+      ],
+      "technology": [
+        "Music Generation",
+        "LLM"
+      ],
+      "description": "프롬프트 기반 AI 음악 생성 서비스",
+      "url": "https://musicgpt.com/",
+      "image_url": "/static/img/platforms/musicgpt.png"
+    },
+    {
+      "id": 52,
+      "name": "Adobe Firefly",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion",
+        "Generative AI"
+      ],
+      "description": "Adobe에서 제공하는 상업적 사용이 가능한 AI 이미지 생성 플랫폼",
+      "url": "https://firefly.adobe.com/",
+      "image_url": "/static/img/platforms/adobefirefly.png"
+    },
+    {
+      "id": 53,
+      "name": "AImageGen",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Text-to-Image",
+        "Generative AI"
+      ],
+      "description": "웹 기반 텍스트-이미지 생성 AI 플랫폼",
+      "url": "https://aimagegen.com/",
+      "image_url": "/static/img/platforms/aimagegen.png"
+    },
+    {
+      "id": 54,
+      "name": "Bing Image",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion",
+        "Text-to-Image"
+      ],
+      "description": "Microsoft에서 제공하는 텍스트-이미지 생성 서비스",
+      "url": "https://www.bing.com/images/create",
+      "image_url": "/static/img/platforms/bingimagecreator.png"
+    },
+    {
+      "id": 55,
+      "name": "BlueWillow",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion",
+        "Generative AI"
+      ],
+      "description": "Discord 기반의 텍스트-이미지 생성 AI",
+      "url": "https://www.bluewillow.ai/",
+      "image_url": "/static/img/platforms/bluewillow.png"
+    },
+    {
+      "id": 56,
+      "name": "Bylo",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Text-to-Image",
+        "Generative AI"
+      ],
+      "description": "웹에서 바로 사용 가능한 텍스트-이미지 생성 도구",
+      "url": "https://bylo.ai/",
+      "image_url": "/static/img/platforms/bylo.png"
+    },
+    {
+      "id": 57,
+      "name": "Canva",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion",
+        "Generative AI"
+      ],
+      "description": "Canva 디자인 툴 내에 포함된 텍스트-이미지 생성 기능",
+      "url": "https://www.canva.com/ai-image-generator/",
+      "image_url": "/static/img/platforms/canvaaiimagegenerator.png"
+    },
+    {
+      "id": 58,
+      "name": "CGDream",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion"
+      ],
+      "description": "컨셉 아트 및 판타지 스타일 이미지 생성 플랫폼",
+      "url": "https://cgdream.ai/",
+      "image_url": "/static/img/platforms/cgdream.png"
+    },
+    {
+      "id": 59,
+      "name": "Craiyon",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Text-to-Image"
+      ],
+      "description": "구 DALL·E Mini로 알려진 무료 텍스트-이미지 생성기",
+      "url": "https://www.craiyon.com/",
+      "image_url": "/static/img/platforms/craiyon.png"
+    },
+    {
+      "id": 60,
+      "name": "DALL·E",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion",
+        "Generative AI"
+      ],
+      "description": "OpenAI에서 제공하는 고품질 텍스트-이미지 생성 모델",
+      "url": "https://openai.com/dall-e",
+      "image_url": "/static/img/platforms/dalle3.png"
+    },
+    {
+      "id": 61,
+      "name": "Deep Dream Generator",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Text-to-Image",
+        "Style Transfer"
+      ],
+      "description": "텍스트 및 스타일 기반 이미지 생성 플랫폼",
+      "url": "https://deepdreamgenerator.com/",
+      "image_url": "/static/img/platforms/deepdreamgenerator.png"
+    },
+    {
+      "id": 62,
+      "name": "Deep AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Text-to-Image"
+      ],
+      "description": "API와 웹을 제공하는 간단한 이미지 생성 AI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "image_url": "/static/img/platforms/deepai.png"
+    },
+    {
+      "id": 63,
+      "name": "Dream by WOMBO",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion"
+      ],
+      "description": "모바일 및 웹에서 사용 가능한 대중적인 이미지 생성 앱",
+      "url": "https://www.wombo.art/",
+      "image_url": "/static/img/platforms/dreambywombo.png"
+    },
+    {
+      "id": 64,
+      "name": "DreamStudio",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Stable Diffusion"
+      ],
+      "description": "Stability AI에서 제공하는 공식 Stable Diffusion 웹 플랫폼",
+      "url": "https://dreamstudio.ai/",
+      "image_url": "/static/img/platforms/dreamstudio.png"
+    },
+    {
+      "id": 65,
+      "name": "Ideogram",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion"
+      ],
+      "description": "텍스트 표현력이 뛰어난 텍스트-이미지 생성 AI",
+      "url": "https://ideogram.ai/",
+      "image_url": "/static/img/platforms/ideogram.png"
+    },
+    {
+      "id": 66,
+      "name": "Leonardo AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion",
+        "Fine-tuning"
+      ],
+      "description": "게임·콘셉트 아트에 특화된 이미지 생성 플랫폼",
+      "url": "https://leonardo.ai/",
+      "image_url": "/static/img/platforms/leonardo.png"
+    },
+    {
+      "id": 67,
+      "name": "NightCafe Studio",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion",
+        "Generative AI"
+      ],
+      "description": "다양한 모델을 선택해 생성 가능한 이미지 플랫폼",
+      "url": "https://nightcafe.studio/",
+      "image_url": "/static/img/platforms/nightcafestudio.png"
+    },
+    {
+      "id": 68,
+      "name": "Playground AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Stable Diffusion"
+      ],
+      "description": "간편한 UI를 제공하는 텍스트-이미지 생성 플랫폼",
+      "url": "https://playgroundai.com/",
+      "image_url": "/static/img/platforms/playground.png"
+    },
+    {
+      "id": 69,
+      "name": "Getimg AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Stable Diffusion",
+        "Text-to-Image"
+      ],
+      "description": "다양한 Stable Diffusion 모델을 제공하는 웹 기반 이미지 생성 플랫폼",
+      "url": "https://getimg.ai/",
+      "image_url": "/static/img/platforms/getimg.png"
+    },
+    {
+      "id": 70,
+      "name": "Grok (xAI)",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "LLM",
+        "Multimodal"
+      ],
+      "description": "xAI에서 개발한 멀티모달 LLM으로, 텍스트 이해와 이미지 생성 기능을 함께 제공",
+      "url": "https://x.ai/",
+      "image_url": "/static/img/platforms/grok.png"
+    },
+    {
+      "id": 71,
+      "name": "ImgGen AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Text-to-Image"
+      ],
+      "description": "간단한 프롬프트로 이미지를 생성할 수 있는 웹 기반 AI 도구",
+      "url": "https://imggen.ai/",
+      "image_url": "/static/img/platforms/imggen.png"
+    },
+    {
+      "id": 72,
+      "name": "Krea AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Realtime Diffusion",
+        "Generative AI"
+      ],
+      "description": "실시간 이미지 생성 및 스타일 제어가 가능한 크리에이티브 AI",
+      "url": "https://www.krea.ai/",
+      "image_url": "/static/img/platforms/krea.png"
+    },
+    {
+      "id": 73,
+      "name": "Mage space",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Stable Diffusion"
+      ],
+      "description": "로그인 없이 사용 가능한 웹 기반 Stable Diffusion 이미지 생성기",
+      "url": "https://www.mage.space/",
+      "image_url": "/static/img/platforms/magespace.png"
+    },
+    {
+      "id": 74,
+      "name": "Magic Studio AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Generative AI",
+        "Image Editing"
+      ],
+      "description": "이미지 생성과 편집을 동시에 제공하는 올인원 AI 스튜디오",
+      "url": "https://magicstudio.com/",
+      "image_url": "/static/img/platforms/magicstudio.png"
+    },
+    {
+      "id": 75,
+      "name": "OpenArt",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Stable Diffusion",
+        "Model Marketplace"
+      ],
+      "description": "다양한 커스텀 모델과 프롬프트를 공유할 수 있는 이미지 생성 플랫폼",
+      "url": "https://openart.ai/",
+      "image_url": "/static/img/platforms/openart.png"
+    },
+    {
+      "id": 76,
+      "name": "Seedream",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion"
+      ],
+      "description": "텍스트 입력을 기반으로 이미지를 생성하는 AI 이미지 생성 서비스",
+      "url": "https://seedream4ai.app/ko",
+      "image_url": "/static/img/platforms/seedream.png"
+    },
+    {
+      "id": 77,
+      "name": "Starryai",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion"
+      ],
+      "description": "모바일 중심의 간편한 텍스트-이미지 생성 플랫폼",
+      "url": "https://www.starryai.com/",
+      "image_url": "/static/img/platforms/starryai.png"
+    },
+    {
+      "id": 78,
+      "name": "Stockimg AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Generative AI"
+      ],
+      "description": "마케팅·SNS·썸네일용 이미지를 생성하는 AI 플랫폼",
+      "url": "https://stockimg.ai/",
+      "image_url": "/static/img/platforms/stockimg.png"
+    },
+    {
+      "id": 79,
+      "name": "VividGen AI",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Text-to-Image"
+      ],
+      "description": "직관적인 UI를 제공하는 텍스트-이미지 생성 AI",
+      "url": "https://www.vividgenai.com/",
+      "image_url": "/static/img/platforms/vividgen.png"
+    },
+    {
+      "id": 80,
+      "name": "Pixelcut AI Image Generator",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Generative AI",
+        "Design Automation"
+      ],
+      "description": "커머스 및 마케팅용 이미지 생성에 특화된 AI 도구",
+      "url": "https://www.pixelcut.ai/ai-image-generator",
+      "image_url": "/static/img/platforms/pixelcut.png"
+    },
+    {
+      "id": 81,
+      "name": "DiffusionBee",
+      "category": "AI Image",
+      "modality": [
+        "Image"
+      ],
+      "technology": [
+        "Diffusion"
+      ],
+      "description": "Stable Diffusion 기반의 로컬 이미지 생성 AI 애플리케이션",
+      "url": "https://diffusionbee.com",
+      "image_url": "/static/img/platforms/diffusionbee.png"
+    },
+    {
+      "id": 82,
+      "name": "ChatGPT",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM"
+      ],
+      "description": "OpenAI가 제공하는 대화형 범용 LLM 웹 서비스",
+      "url": "https://chatgpt.com",
+      "image_url": "/static/img/platforms/chatgpt.png"
+    },
+    {
+      "id": 83,
+      "name": "Claude",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM"
+      ],
+      "description": "Anthropic이 개발한 안전 중심 대화형 LLM 서비스",
+      "url": "https://claude.ai",
+      "image_url": "/static/img/platforms/claude.png"
+    },
+    {
+      "id": 84,
+      "name": "Gemini",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM"
+      ],
+      "description": "Google이 제공하는 멀티모달 기반 LLM 웹 서비스",
+      "url": "https://gemini.google.com",
+      "image_url": "/static/img/platforms/gemini.png"
+    },
+    {
+      "id": 85,
+      "name": "Perplexity AI",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM",
+        "Retrieval Augmented Generation"
+      ],
+      "description": "검색 증강 기반의 LLM 답변 제공 서비스",
+      "url": "https://perplexity.ai",
+      "image_url": "/static/img/platforms/perplexity.png"
+    },
+    {
+      "id": 86,
+      "name": "Phind",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM",
+        "Code Assistant"
+      ],
+      "description": "개발자 중심의 코드 특화 LLM 검색 및 질의 서비스",
+      "url": "https://phind.com",
+      "image_url": "/static/img/platforms/phind.png"
+    },
+    {
+      "id": 87,
+      "name": "Poe",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM Aggregation"
+      ],
+      "description": "여러 LLM을 하나의 인터페이스로 제공하는 플랫폼",
+      "url": "https://poe.com",
+      "image_url": "/static/img/platforms/poe.png"
+    },
+    {
+      "id": 88,
+      "name": "Character AI",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM"
+      ],
+      "description": "캐릭터 기반 대화형 LLM 서비스",
+      "url": "https://character.ai",
+      "image_url": "/static/img/platforms/characterai.png"
+    },
+    {
+      "id": 89,
+      "name": "Pi",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM"
+      ],
+      "description": "Inflection AI가 제공하는 개인 대화형 LLM 서비스",
+      "url": "https://pi.ai",
+      "image_url": "/static/img/platforms/pi.png"
+    },
+    {
+      "id": 90,
+      "name": "YouChat",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM",
+        "Search"
+      ],
+      "description": "You.com 검색 엔진에 통합된 대화형 LLM",
+      "url": "https://you.com",
+      "image_url": "/static/img/platforms/youchat.png"
+    },
+    {
+      "id": 91,
+      "name": "Kagi Assistant",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM",
+        "Search"
+      ],
+      "description": "Kagi 검색 서비스에 포함된 LLM 기반 어시스턴트",
+      "url": "https://kagi.com",
+      "image_url": "/static/img/platforms/kagi.png"
+    },
+    {
+      "id": 92,
+      "name": "chatPDF",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM",
+        "Document QA"
+      ],
+      "description": "PDF 문서 내용을 기반으로 질의응답을 제공하는 LLM 서비스",
+      "url": "https://www.chatpdf.com",
+      "image_url": "/static/img/platforms/chatpdf.png"
+    },
+    {
+      "id": 93,
+      "name": "Microsoft Copilot",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM"
+      ],
+      "description": "Microsoft가 제공하는 웹 기반 LLM 어시스턴트",
+      "url": "https://copilot.microsoft.com",
+      "image_url": "/static/img/platforms/copilot.png"
+    },
+    {
+      "id": 94,
+      "name": "AI21 Labs",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM API"
+      ],
+      "description": "개발자를 위한 LLM API 및 언어 모델 플랫폼",
+      "url": "https://www.ai21.com",
+      "image_url": "/static/img/platforms/ai21.png"
+    },
+    {
+      "id": 95,
+      "name": "Cohere",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM API"
+      ],
+      "description": "엔터프라이즈용 LLM API 및 NLP 플랫폼",
+      "url": "https://cohere.com",
+      "image_url": "/static/img/platforms/cohere.png"
+    },
+    {
+      "id": 96,
+      "name": "Mistral AI",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM API"
+      ],
+      "description": "오픈 및 상용 LLM을 제공하는 모델 개발사",
+      "url": "https://mistral.ai",
+      "image_url": "/static/img/platforms/mistral.png"
+    },
+    {
+      "id": 97,
+      "name": "OpenRouter",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM API Aggregation"
+      ],
+      "description": "여러 LLM API를 단일 인터페이스로 제공하는 라우팅 플랫폼",
+      "url": "https://openrouter.ai",
+      "image_url": "/static/img/platforms/openrouter.png"
+    },
+    {
+      "id": 98,
+      "name": "Together AI",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM Hosting"
+      ],
+      "description": "오픈소스 LLM 실행 및 호스팅 플랫폼",
+      "url": "https://www.together.ai",
+      "image_url": "/static/img/platforms/together.png"
+    },
+    {
+      "id": 99,
+      "name": "Replicate",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "Model Inference API"
+      ],
+      "description": "머신러닝 모델을 API 형태로 실행할 수 있는 플랫폼",
+      "url": "https://replicate.com",
+      "image_url": "/static/img/platforms/replicate.png"
+    },
+    {
+      "id": 100,
+      "name": "DeepInfra",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM Hosting"
+      ],
+      "description": "고성능 LLM 추론 API를 제공하는 인프라 플랫폼",
+      "url": "https://deepinfra.com",
+      "image_url": "/static/img/platforms/deepinfra.png"
+    },
+    {
+      "id": 101,
+      "name": "Fireworks AI",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM Inference"
+      ],
+      "description": "대규모 LLM 추론 및 배포를 위한 플랫폼",
+      "url": "https://fireworks.ai",
+      "image_url": "/static/img/platforms/fireworks.png"
+    },
+    {
+      "id": 102,
+      "name": "GroqCloud",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM Inference"
+      ],
+      "description": "Groq 하드웨어 기반 초저지연 LLM 추론 서비스",
+      "url": "https://console.groq.com",
+      "image_url": "/static/img/platforms/groq.png"
+    },
+    {
+      "id": 103,
+      "name": "Hugging Face",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "Model Hub",
+        "Inference API"
+      ],
+      "description": "Hugging Face에서 제공하는 모델 추론 API 서비스",
+      "url": "https://huggingface.co",
+      "image_url": "/static/img/platforms/huggingface.png"
+    },
+    {
+      "id": 104,
+      "name": "LangChain",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM Framework"
+      ],
+      "description": "LLM 애플리케이션 개발을 위한 프레임워크",
+      "url": "https://www.langchain.com",
+      "image_url": "/static/img/platforms/langchain.png"
+    },
+    {
+      "id": 105,
+      "name": "Flowise",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "LLM Framework"
+      ],
+      "description": "노코드 방식의 LangChain 기반 LLM 워크플로우 도구",
+      "url": "https://flowiseai.com",
+      "image_url": "/static/img/platforms/flowise.png"
+    },
+    {
+      "id": 106,
+      "name": "Replit AI",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "Code Assistant"
+      ],
+      "description": "Replit IDE에 통합된 코드 생성 및 보조 LLM",
+      "url": "https://replit.com",
+      "image_url": "/static/img/platforms/replit.png"
+    },
+    {
+      "id": 107,
+      "name": "Tabnine",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "Code Assistant"
+      ],
+      "description": "개발자를 위한 AI 코드 자동완성 도구",
+      "url": "https://www.tabnine.com",
+      "image_url": "/static/img/platforms/tabnine.png"
+    },
+    {
+      "id": 108,
+      "name": "Jasper",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "Content Generation"
+      ],
+      "description": "마케팅 및 콘텐츠 작성을 위한 LLM 기반 도구",
+      "url": "https://www.jasper.ai",
+      "image_url": "/static/img/platforms/jasper.png"
+    },
+    {
+      "id": 109,
+      "name": "Copy AI",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "Content Generation"
+      ],
+      "description": "자동 마케팅 문구 생성을 위한 LLM 서비스",
+      "url": "https://www.copy.ai",
+      "image_url": "/static/img/platforms/copy.png"
+    },
+    {
+      "id": 110,
+      "name": "Writesonic",
+      "category": "LLM",
+      "modality": [
+        "Text"
+      ],
+      "technology": [
+        "Content Generation"
+      ],
+      "description": "블로그 및 광고 콘텐츠 작성을 위한 LLM 플랫폼",
+      "url": "https://writesonic.com",
+      "image_url": "/static/img/platforms/writesonic.png"
+    },
+    {
+      "id": 111,
+      "name": "GitHub Copilot",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Code LLM",
+        "AI Pair Programming"
+      ],
+      "description": "대규모 언어 모델을 활용한 코드 자동 완성 및 개발 보조 도구",
+      "url": "https://github.com/features/copilot",
+      "image_url": "/static/img/platforms/githubcopilot.png"
+    },
+    {
+      "id": 112,
+      "name": "Tabnine",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Code Completion AI",
+        "Private LLM"
+      ],
+      "description": "개발 환경에서 코드 자동 완성과 제안을 제공하는 AI 코딩 도구",
+      "url": "https://www.tabnine.com",
+      "image_url": "/static/img/platforms/tabnine.png"
+    },
+    {
+      "id": 113,
+      "name": "Replit AI",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "LLM-based Coding Assistant"
+      ],
+      "description": "Replit IDE 내에서 코드 생성, 설명, 수정 기능을 제공하는 AI 개발 도구",
+      "url": "https://replit.com/ai",
+      "image_url": "/static/img/platforms/replit_ai.png"
+    },
+    {
+      "id": 114,
+      "name": "Testim",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Test Automation"
+      ],
+      "description": "머신러닝을 활용해 자동화 테스트를 생성하고 유지보수하는 테스트 플랫폼",
+      "url": "https://www.testim.io",
+      "image_url": "/static/img/platforms/testim.png"
+    },
+    {
+      "id": 115,
+      "name": "nTopology",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Generative Design",
+        "Computational Engineering"
+      ],
+      "description": "생성 설계 및 계산 엔지니어링을 위한 고급 설계 자동화 플랫폼",
+      "url": "https://www.ntop.com",
+      "image_url": "/static/img/platforms/ntopology.png"
+    },
+    {
+      "id": 116,
+      "name": "n8n",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Workflow Automation",
+        "AI Integration"
+      ],
+      "description": "AI 및 외부 서비스를 연결해 자동화 워크플로우를 구성하는 오픈소스 플랫폼",
+      "url": "https://n8n.io",
+      "image_url": "/static/img/platforms/n8n.png"
+    },
+    {
+      "id": 117,
+      "name": "IFTTT",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Automation Platform"
+      ],
+      "description": "조건 기반 자동화를 통해 다양한 서비스와 디바이스를 연결하는 플랫폼",
+      "url": "https://ifttt.com",
+      "image_url": "/static/img/platforms/ifttt.png"
+    },
+    {
+      "id": 118,
+      "name": "Airtable",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "No-code App Platform",
+        "AI-assisted Data Management"
+      ],
+      "description": "스프레드시트 기반 데이터베이스에 AI 기능을 결합한 협업 플랫폼",
+      "url": "https://airtable.com",
+      "image_url": "/static/img/platforms/airtable.png"
+    },
+    {
+      "id": 119,
+      "name": "Zapier AI",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Automation",
+        "Natural Language Workflow Builder"
+      ],
+      "description": "자연어 기반으로 자동화 워크플로우와 AI 에이전트를 생성하는 플랫폼",
+      "url": "https://zapier.com",
+      "image_url": "/static/img/platforms/zapier.png"
+    },
+    {
+      "id": 120,
+      "name": "UiPath",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "RPA",
+        "AI Automation"
+      ],
+      "description": "로봇 프로세스 자동화와 AI를 결합한 엔터프라이즈 자동화 플랫폼",
+      "url": "https://www.uipath.com",
+      "image_url": "/static/img/platforms/uipath.png"
+    },
+    {
+      "id": 121,
+      "name": "GPTZero",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Text Detection"
+      ],
+      "description": "AI 생성 텍스트를 탐지하기 위한 분석 기반 검사 도구",
+      "url": "https://gptzero.me",
+      "image_url": "/static/img/platforms/gptzero.png"
+    },
+    {
+      "id": 122,
+      "name": "ChatPDF",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "LLM Document QA"
+      ],
+      "description": "PDF 문서를 대상으로 질의응답과 요약을 제공하는 LLM 기반 도구",
+      "url": "https://www.chatpdf.com",
+      "image_url": "/static/img/platforms/chatpdf.png"
+    },
+    {
+      "id": 123,
+      "name": "Jasper",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Marketing LLM",
+        "Content Generation"
+      ],
+      "description": "마케팅 및 비즈니스 콘텐츠 생성을 위한 AI 글쓰기 플랫폼",
+      "url": "https://www.jasper.ai",
+      "image_url": "/static/img/platforms/jasper.png"
+    },
+    {
+      "id": 124,
+      "name": "Phind",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Search Engine",
+        "LLM QA"
+      ],
+      "description": "개발자 중심의 질문응답을 제공하는 LLM 기반 검색 엔진",
+      "url": "https://www.phind.com",
+      "image_url": "/static/img/platforms/phind.png"
+    },
+    {
+      "id": 125,
+      "name": "Copy AI",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Content Generation LLM"
+      ],
+      "description": "마케팅 및 비즈니스 텍스트 생성을 위한 LLM 기반 콘텐츠 작성 도구",
+      "url": "https://www.copy.ai",
+      "image_url": "/static/img/platforms/copy_ai.png"
+    },
+    {
+      "id": 126,
+      "name": "Writesonic",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Content Generation LLM"
+      ],
+      "description": "블로그, 광고, 웹 콘텐츠 작성을 지원하는 LLM 기반 글쓰기 플랫폼",
+      "url": "https://writesonic.com",
+      "image_url": "/static/img/platforms/writesonic.png"
+    },
+    {
+      "id": 127,
+      "name": "MOSTLY AI",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Synthetic Data Generation"
+      ],
+      "description": "개인정보 보호를 위한 합성 데이터를 생성하는 AI 기반 데이터 플랫폼",
+      "url": "https://mostly.ai",
+      "image_url": "/static/img/platforms/mostly.png"
+    },
+    {
+      "id": 128,
+      "name": "Syntho",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Synthetic Data Software"
+      ],
+      "description": "민감한 데이터를 대체하기 위한 합성 데이터 생성 소프트웨어",
+      "url": "https://syntho.ai",
+      "image_url": "/static/img/platforms/syntho.png"
+    },
+    {
+      "id": 129,
+      "name": "Julius AI",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Data Analysis"
+      ],
+      "description": "자연어를 통해 데이터 분석과 시각화를 수행하는 AI 분석 도구",
+      "url": "https://julius.ai",
+      "image_url": "/static/img/platforms/julius.png"
+    },
+    {
+      "id": 130,
+      "name": "ClickUp",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Productivity",
+        "Task Automation"
+      ],
+      "description": "업무 관리 플랫폼에 AI 기반 문서 작성 및 작업 자동화를 결합한 협업 도구",
+      "url": "https://clickup.com",
+      "image_url": "/static/img/platforms/clickup.png"
+    },
+    {
+      "id": 131,
+      "name": "Motion",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Scheduling"
+      ],
+      "description": "업무 일정과 우선순위를 자동으로 최적화하는 AI 일정 관리 도구",
+      "url": "https://usemotion.com",
+      "image_url": "/static/img/platforms/motion.png"
+    },
+    {
+      "id": 132,
+      "name": "Tray.io",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Integration Automation",
+        "AI Workflow"
+      ],
+      "description": "엔터프라이즈 환경에서 API 및 AI 기반 자동화를 지원하는 통합 플랫폼",
+      "url": "https://tray.io",
+      "image_url": "/static/img/platforms/trayio.png"
+    },
+    {
+      "id": 133,
+      "name": "Jotform AI Agents",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Agents",
+        "Form Automation"
+      ],
+      "description": "폼 기반 워크플로우에 AI 에이전트를 결합한 자동화 응답 및 처리 도구",
+      "url": "https://www.jotform.com",
+      "image_url": "/static/img/platforms/jotform.png"
+    },
+    {
+      "id": 134,
+      "name": "Bardeen",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Browser Automation",
+        "AI Automation"
+      ],
+      "description": "브라우저 작업을 자동화하고 AI로 반복 업무를 처리하는 생산성 도구",
+      "url": "https://www.bardeen.ai",
+      "image_url": "/static/img/platforms/bardeen.png"
+    },
+    {
+      "id": 135,
+      "name": "Coupler.io",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Data Integration"
+      ],
+      "description": "다양한 서비스의 데이터를 자동으로 동기화하는 데이터 통합 플랫폼",
+      "url": "https://www.coupler.io",
+      "image_url": "/static/img/platforms/coupler.png"
+    },
+    {
+      "id": 136,
+      "name": "Activepieces",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Workflow Automation"
+      ],
+      "description": "오픈소스 기반의 자동화 워크플로우 및 AI 연동 플랫폼",
+      "url": "https://activepieces.com",
+      "image_url": "/static/img/platforms/activepieces.png"
+    },
+    {
+      "id": 137,
+      "name": "Retool",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Internal Tool Builder",
+        "LLM Integration"
+      ],
+      "description": "내부 업무 도구를 빠르게 구축하고 AI 기능을 통합할 수 있는 개발 플랫폼",
+      "url": "https://retool.com",
+      "image_url": "/static/img/platforms/retool.png"
+    },
+    {
+      "id": 138,
+      "name": "WeWeb",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "No-code Web Builder"
+      ],
+      "description": "노코드 방식으로 웹 애플리케이션을 구축하고 AI 기능을 연동하는 플랫폼",
+      "url": "https://weweb.io",
+      "image_url": "/static/img/platforms/weweb.png"
+    },
+    {
+      "id": 139,
+      "name": "Workato",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Enterprise Automation",
+        "AI Orchestration"
+      ],
+      "description": "엔터프라이즈 환경에서 AI와 비즈니스 프로세스를 자동화하는 통합 플랫폼",
+      "url": "https://www.workato.com",
+      "image_url": "/static/img/platforms/workato.png"
+    },
+    {
+      "id": 140,
+      "name": "Kissflow",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Workflow Management",
+        "AI Automation"
+      ],
+      "description": "비즈니스 프로세스 관리에 AI 자동화를 결합한 로우코드 플랫폼",
+      "url": "https://kissflow.com",
+      "image_url": "/static/img/platforms/kissflow.png"
+    },
+    {
+      "id": 141,
+      "name": "Reclaim AI",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Calendar Optimization"
+      ],
+      "description": "캘린더 데이터를 분석해 업무 시간을 자동으로 최적화하는 AI 일정 관리 도구",
+      "url": "https://reclaim.ai",
+      "image_url": "/static/img/platforms/reclaim.png"
+    },
+    {
+      "id": 142,
+      "name": "Autodesk Generative Design",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "Generative Design"
+      ],
+      "description": "설계 제약 조건을 기반으로 최적의 설계안을 자동 생성하는 Autodesk의 생성 설계 기술",
+      "url": "https://www.autodesk.com/solutions/generative-design",
+      "image_url": "/static/img/platforms/autodesk.png"
+    },
+    {
+      "id": 143,
+      "name": "Beautiful.ai",
+      "category": "AI_etc",
+      "modality": [
+        "ETC"
+      ],
+      "technology": [
+        "AI Presentation Generation"
+      ],
+      "description": "레이아웃과 디자인을 자동으로 구성하는 AI 기반 프레젠테이션 제작 도구",
+      "url": "https://beautiful.ai",
+      "image_url": "/static/img/platforms/beautiful.png"
+    }
+  ]
+}
+
+
+
+

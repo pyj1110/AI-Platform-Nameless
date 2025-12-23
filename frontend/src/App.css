@@ -1,0 +1,704 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+/* 전체 */
+.app {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #000;
+}
+
+/* mypage layout */
+.mypageMain {
+  min-height: calc(100vh - 60px);
+}
+
+/* 내부 폭 */
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background: rgba(100, 100, 100, 0.06);
+}
+
+/* PROMPT_NODE 숨김 */
+.headerHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.headerin {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerlogo {
+  width: 140px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.headerright {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.headertxt {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  cursor: pointer;
+}
+
+/* login user menu */
+.userMenuBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userAvatarSm {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.userName {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.userDropdownEmail {
+  padding: 10px 16px;
+  color: rgba(231, 231, 231, 0.8);
+  font-size: 13px;
+}
+
+.dropdownLogout {
+  color: #ff4d4d !important;
+}
+
+.dropdownLogout:hover {
+  color: #ff4d4d !important;
+  background: rgba(255, 77, 77, 0.12) !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background: #F5F5F5;
+}
+
+
+/* ===================박유진===================  */
+
+/* =========================
+   MAIN SECTION
+   ========================= */
+.main {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.mainlogo {
+  width: 180px;
+  height: 64px;
+  border-radius: 14px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  z-index: 1000;
+}
+
+/* search */
+.search {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px 12px;
+  border-radius: 18px;
+  background: transparent;
+  position: relative;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 비디오 배경 */
+.mainVideoBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.searchin:focus,
+.form-control:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+
+.searchin {
+  position: relative;
+  z-index: 2;
+}
+
+.form-control {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+
+.searchin::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.maintext {
+  width: 860px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.text {
+  opacity: 0.85;
+  margin-top: 40px;
+}
+
+.mainbtns {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+  justify-content: center;
+}
+
+.mainbtn {
+  position: relative;
+  width: 200px;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.95);
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+/* menu */
+.menu {
+  width: 100%;
+  margin: 10px 0 26px;
+}
+
+.menuline {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.menuin {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuitems {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+}
+
+.menuitem {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.menuitem.active {
+  opacity: 1;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.menuitem:not(.active):hover {
+  opacity: 1;
+}
+
+/* band 공통 스타일 */
+.band {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.bandin {
+  opacity: 0.85;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+.footer {
+  width: 100%;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footerin {
+  height: 220px;
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.footerrow {
+  padding-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.footermenu {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  opacity: 0.9;
+}
+
+.footertxt {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.footerright {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ===================박유진===================  */
+
+.snslogo {
+  display: flex;
+  gap: 18px;
+}
+
+.snslogo span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.snslogo span:hover {
+  opacity: 1;
+}
+
+/* ===================박유진===================  */
+
+.footercopy {
+  padding: 14px 0 100px;
+}
+
+.copy {
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* =========================
+   Border Beam
+   ========================= */
+
+.borderBeamWrap {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.borderBeamSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.borderBeamMaskRect {
+  animation-name: borderBeamDash;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.borderBeamMaskRect.reverse {
+  animation-name: borderBeamDashReverse;
+}
+
+@keyframes borderBeamDash {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+@keyframes borderBeamDashReverse {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+/* ========== 반응형 ========== */
+
+@media (max-width: 980px) {
+  .llmsection .ctagrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =================송정민12.19================ */
+/* =========================
+   추천 카드 스타일 (이미지 스타일로 수정)
+   ========================= */
+.recommendation-cards {
+  width: 100%;
+  max-width: 940px;
+  margin: 15px auto 80px;
+  padding: 0;
+  border-top: none;
+  border-bottom: none;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.recommendation-card {
+  width: 100%;
+  height: 160px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border-radius: 0px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  white-space: nowrap;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.recommendation-card:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.recommendation-card-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+.recommendation-card-logo-img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  display: block;
+}
+
+.recommendation-card-name {
+  font-size: 16px;
+  opacity: 0.95;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box; 
+}
+
+.center {
+  display: flex;               
+  flex-direction: column;       
+  align-items: center;          
+}
+
+
+.llmsection .ctagrid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 28px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .recommendation-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .llmsection .ctagrid {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media (max-width: 768px) {
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .recommendation-cards {
+    margin: 10px auto 25px;
+  }
+
+  .recommendation-card {
+    height: 140px;
+    padding: 12px 15px;
+  }
+
+  .llmsection .ctagrid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .recommendation-card-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .recommendation-card-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommendation-card {
+    height: 130px;
+    padding: 10px 12px;
+  }
+
+  .recommendation-card-logo {
+    width: 55px;
+    height: 55px;
+    margin-top: 8px;
+  }
+
+  .recommendation-card-name {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+}
+/* =================송정민12.19================ */
+
+/* =========================
+   GUIDE BUTTON + MODAL
+   ========================= */
+
+.description-footer,
+.video-description-footer {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.guide-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.guide-button:hover {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.guide-button:active {
+  transform: translateY(1px);
+}
+
+/* ========== 반응형 ========== */
+
+@media (max-width: 980px) {
+
+  .llmsection .ctalayout,
+  .imagesection .ctalayout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .imagesection .imagegrid {
+    grid-template-columns: 1fr;
+  }
+
+  .llmsection .ctagrid {
+    grid-template-columns: 1fr;
+  }
+
+  .llmsection .metricbox {
+    width: 100%;
+  }
+}
+
+  /* 반응형 디자인 */
+@media (max-width: 768px) {
+  .video-infinite-scroll-content .cta {
+    min-width: 180px;
+  }
+
+  .video-infinite-scroll-content {
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .cta-description,
+  .video-description {
+    width: 100%;
+    max-width: 240px;
+    padding: 15px;
+  }
+
+  .description-text,
+  .video-description-text {
+    font-size: 13px;
+  }
+
+  .visit-button,
+  .video-visit-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+/* 모바일 터치 최적화 */
+@media (hover: none) and (pointer: coarse) {
+  .video-infinite-scroll-container {
+    cursor: default;
+  }
+
+  .video-infinite-scroll-container:active {
+    cursor: grabbing;
+  }
+}

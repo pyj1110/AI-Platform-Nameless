@@ -1,0 +1,111 @@
+/* ===================박유진===================  */
+
+/* =========================
+   AUDIO SECTION
+   ========================= */
+.audiosection .audiobox {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+}
+
+.audiosection {
+  padding: 122px 0 42px;
+}
+
+.audiosection .title {
+  width: 940px;
+  text-align: left;
+  margin: 0 0 18px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  margin-bottom: 80px;
+}
+
+.audiosection .audio {
+  width: 500px;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.audiosection .audioplayer {
+  width: 100%;
+  background: transparent;
+}
+
+.audiosection .cta {
+  width: 240px;
+  height: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+}
+
+.audiosection .cta:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.25)
+}
+
+.audiosection .ctalogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.audiosection .ctalogoimg {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.audiosection .ctaname {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.audiosection .ctascroll {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.audiosection .bandin {
+  opacity: 0.85;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.audiosection audio {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* ===================박유진===================  */

@@ -1,0 +1,72 @@
+/* =========================
+   CATEGORY SECTION
+   ========================= */
+.categorysection {
+  padding: 122px 0 42px;
+}
+
+.categorysection .title {
+  width: 940px;
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  margin-bottom: 80px;
+}
+
+.categorysection .ctagrid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 28px;
+  justify-content: center;
+  width: 100%;
+}
+
+.categorysection .cta {
+  width: 240px;
+  height: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+}
+
+.categorysection .cta:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.25)
+}
+
+.categorysection .ctalogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.categorysection .ctalogoimg {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.categorysection .ctaname {
+  font-size: 14px;
+  opacity: 0.95;
+}
+

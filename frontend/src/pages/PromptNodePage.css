@@ -1,0 +1,405 @@
+/* =========================
+   PROMPT NODE PAGE (Node UI)
+   ========================= */
+
+.nodePage {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #000;
+}
+
+/* ======== 상단바 ======== */
+.nodeTopbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 9999;
+}
+
+.nodeTopbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nodeBackBtn {
+  width: 38px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+}
+
+.nodeBackBtn:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.nodeTitle {
+  opacity: 0.9;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.nodeZoom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nodeZoomBtn {
+  width: 34px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+}
+
+.nodeZoomBtn:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.nodeZoomValue {
+  min-width: 62px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+
+  opacity: 0.92;
+  font-size: 12px;
+}
+
+/* ======== Node UI 캔버스 ======== */
+.nodeCanvas {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  padding-top: 62px;
+  padding-bottom: 34px;
+  height: 100vh;
+
+/* ======== 도트 그리드 body ======== */
+  background-image: radial-gradient(rgba(255,255,255,0.16) 1px, transparent 1px);
+  background-size: 18px 18px;
+  background-position: center;
+}
+
+/* ======== 토글 메뉴 ======== */
+.nodeSide {
+  position: absolute;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  user-select: none;
+}
+
+.nodeSideHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.nodeSide.free .nodeSideHeader {
+  cursor: grab;
+}
+
+.nodeSide.free .nodeSideHeader:active {
+  cursor: grabbing;
+}
+
+.nodeSideHandle {
+  width: 30px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  color: rgba(255,255,255,0.92);
+  font-size: 14px;
+}
+
+.nodeSidePinBtn {
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+}
+
+.nodeSidePinBtn:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.nodeSidePinBtn.on {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.nodeSideBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nodeSideBtn {
+  width: 76px;
+  height: 38px;
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.nodeSideBtn:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  opacity: 1;
+}
+
+.nodeSideBtn.active {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.06);
+  opacity: 1;
+}
+
+/* pan/zoom 적용 레이어 */
+.nodeViewport {
+  position: absolute;
+  inset: 0;
+  transform-origin: 0 0;
+}
+
+/* node flow line */
+.nodeEdges {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.nodeEdgePath {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* none canvas */
+.nodeEmpty {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  max-width: calc(100vw - 120px);
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(0,0,0,0.40);
+  padding: 18px 18px;
+  box-sizing: border-box;
+  color: rgba(255,255,255,0.88);
+}
+
+.nodeEmptyTitle {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+  opacity: 0.95;
+}
+
+.nodeEmptyDesc {
+  font-size: 12px;
+  line-height: 1.65;
+  opacity: 0.85;
+}
+
+.nodeEmptyTip {
+  margin-top: 12px;
+  font-size: 11px;
+  opacity: 0.75;
+}
+
+/* 노드 카드(생성 시 사용) */
+.nodeCard {
+  position: absolute;
+  width: 320px;
+  height: 220px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(245, 245, 245, 0.94);
+  color: #111;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  cursor: grab;
+  user-select: none;
+}
+
+.nodeCard:active {
+  cursor: grabbing;
+}
+
+.nodeCardHead {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+
+.nodeBrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nodeBrandDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.10);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.nodeBrandName {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+.nodeCardIcon {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nodeCardIcon:hover {
+  opacity: 1;
+}
+
+.nodeCardBody {
+  padding: 6px 12px 12px;
+  box-sizing: border-box;
+}
+
+.nodeSliderRow {
+  padding: 6px 0 10px;
+}
+
+.nodeSliderTrack {
+  height: 6px;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.10);
+  position: relative;
+}
+
+.nodeSliderKnob {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nodeLines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+
+.nodeLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nodeLineText {
+  font-size: 10px;
+  opacity: 0.75;
+}
+
+.nodeLineGhost {
+  width: 70px;
+  height: 10px;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.10);
+}
+
+.nodeTextArea {
+  width: 100%;
+  height: 78px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.85);
+}
+
+.nodePort {
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(245,245,245,0.95);
+  border: 2px solid rgba(0,0,0,0.28);
+  transform: translateY(-50%);
+}
+
+/* 하단 힌트(PIN) */
+.nodeHint {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  opacity: 0.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 9999;
+}

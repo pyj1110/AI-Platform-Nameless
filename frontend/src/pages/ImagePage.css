@@ -1,0 +1,112 @@
+/* =========================
+   IMAGE SECTION
+   ========================= */
+.imagesection {
+  padding: 122px 0 42px;
+}
+
+.imagesection .title {
+  width: 940px;
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  margin-bottom: 80px;
+}
+
+.imagesection .imagein {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imagesection .imagegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagesection .imageleft,
+.imagesection .imageright {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.imagesection .ctalayout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+  justify-items: center;
+}
+
+.imagesection .cta {
+  width: 240px;
+  height: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+}
+
+.imagesection .cta:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.25)
+}
+
+.imagesection .ctalogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.imagesection .ctalogoimg {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.imagesection .ctaname {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.imagesection .box {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  opacity: 0.95;
+}
+
+.imagesection .imagebox {
+  min-height: 350px;
+}
+
+.imagesection .imageboxbottom {
+  min-height: 350px;
+}

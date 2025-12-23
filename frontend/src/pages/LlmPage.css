@@ -1,0 +1,197 @@
+/* =========================
+   LLM SECTION
+   ========================= */
+.llmsection {
+  padding: 122px 0 42px;
+}
+
+.llmsection .title {
+  width: 940px;
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  margin-bottom: 80px;
+}
+
+.llmsection .ctarow {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.llmsection .cta {
+  width: 240px;
+  height: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+}
+
+.llmsection .cta:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.25)
+}
+
+.llmsection .ctalogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.llmsection .ctalogoimg {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.llmsection .ctaname {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+/* 4 x 8 CTA GRID */
+.llmsection .ctagrid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 28px;
+  justify-content: center;
+  width: 100%;
+}
+
+.llmsection .bandin {
+  opacity: 0.85;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+/* ===================박유진===================  */
+.llm-formula-box {
+  width: 100%;
+  max-width: 1520px;
+  padding: 12px 0;
+  overflow: hidden;
+  opacity: 0.75;
+}
+
+.llm-line {
+  width: 100%;
+  overflow: hidden;
+}
+
+.llm-track {
+  display: flex;
+  width: max-content;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+  transform: translateX(-33.333%);
+  will-change: transform;
+}
+
+/* 윗줄 (오른쪽) */
+.llm-track.right {
+  animation: flow-right 22s linear infinite;
+}
+
+/* 아랫줄 (왼쪽) */
+.llm-track.left {
+  animation: flow-left-4 22s linear infinite;
+}
+
+.llm-track span {
+  letter-spacing: 0.3px;
+  word-spacing: 6px;
+}
+
+.llm-formula-box {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.llm-track i {
+  font-style: normal;
+  opacity: 0.5;
+  margin: 0 4px;
+}
+
+/* =========================
+   LLM FLOW KEYFRAMES (필수)
+   ========================= */
+
+@keyframes flow-left-4 {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes flow-right {
+  from {
+    transform: translateX(-33.333%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* ===================박유진===================  */
+
+.llmsection .ctascroll {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.llmsection .ctascroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.llmsection .ctascroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+}
+
+.llmsection .ctascroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}

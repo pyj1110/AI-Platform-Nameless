@@ -1,0 +1,327 @@
+/* =========================
+   VIDEO SECTION
+   ========================= */
+
+.videosection {
+  padding: 122px 0 42px;
+}
+
+.videosection .title {
+  width: 940px;
+  text-align: left;
+  margin: 0 0 18px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  margin-bottom: 80px;
+}
+
+.videosection .cta {
+  width: 240px;
+  height: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-sizing: border-box;
+}
+
+.videosection .cta:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.25)
+}
+
+.videosection .ctalogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.videosection .ctalogoimg {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.videosection .ctaname {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.videosection .ctascroll {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.videosection .ctascroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.videosection .ctascroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+}
+
+.videosection .ctascroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}
+
+.videosection .box {
+  width: 1440px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  box-sizing: border-box;
+  opacity: 0.95;
+}
+
+.videosection .videobox {
+  min-height: 360px;
+  max-width: 960px;
+  margin-bottom: 30px;
+}
+
+.videosection .bandin {
+  opacity: 0.85;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+/* =================송정민================ */
+/* video / drag style */
+.video-infinite-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  position: relative;
+  padding: 15px 0;
+  user-select: none;
+  touch-action: pan-x;
+}
+
+.video-infinite-scroll-container.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.video-infinite-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.video-infinite-scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.video-infinite-scroll-content {
+  display: inline-flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* CTA 버튼 설명 스타일 */
+.video-infinite-scroll-content .cta {
+  flex: 0 0 auto;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  cursor: grab;
+  user-select: none;
+}
+
+.video-infinite-scroll-content .cta:hover {
+  transform: translateY(-2px);
+}
+
+.video-infinite-scroll-content .cta.selected {
+  cursor: pointer;
+}
+
+.cta-description,
+.video-description {
+  width: 240px;
+  background: rgba(40, 40, 50, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  margin-top: -1px;
+  position: relative;
+  z-index: 1;
+  animation: slideDown 0.3s ease-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.description-header,
+.video-description-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.description-header h3,
+.video-description-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+  text-align: left;
+  flex: 1;
+}
+
+.close-description-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.close-description-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.description-content,
+.video-description-content {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.description-text,
+.video-description-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-line;
+  word-wrap: break-word;
+  text-align: left;
+  font-weight: 300;
+}
+
+.no-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  font-size: 13px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+/* 설명 푸터 */
+.description-footer,
+.video-description-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.visit-button,
+.video-visit-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(100, 120, 255, 0.15);
+  color: #a5b4fc;
+  border: 1px solid rgba(100, 120, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.visit-button:hover,
+.video-visit-button:hover {
+  background: rgba(100, 120, 255, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .video-infinite-scroll-content .cta {
+    min-width: 180px;
+  }
+
+  .video-infinite-scroll-content {
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .cta-description,
+  .video-description {
+    width: 100%;
+    max-width: 240px;
+    padding: 15px;
+  }
+
+  .description-text,
+  .video-description-text {
+    font-size: 13px;
+  }
+
+  .visit-button,
+  .video-visit-button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* 모바일 터치 최적화 */
+@media (hover: none) and (pointer: coarse) {
+  .video-infinite-scroll-container {
+    cursor: default;
+  }
+
+  .video-infinite-scroll-container:active {
+    cursor: grabbing;
+  }
+}
+/* =================송정민================ */

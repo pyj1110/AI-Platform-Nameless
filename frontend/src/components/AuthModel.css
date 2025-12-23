@@ -1,0 +1,298 @@
+
+/* =========================
+Modal frame
+========================= */
+.authBackdrop {
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.authDialog {
+  max-width: 550px;
+}
+
+.authContent {
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+  color: #fff;
+}
+
+/* ---- Header ---- */
+.authHeader {
+  background: #1f1f1f;
+  border-bottom: 0;
+  padding: 30px 50px 0;
+  align-items: flex-start;
+}
+
+.authHeaderInner {
+  width: 100%;
+}
+
+.authTitle {
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.authHeader .btn-close {
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+.authHeader .btn-close:hover {
+  opacity: 1;
+}
+
+/* ---- Body ---- */
+.authBody {
+  padding: 12px 50px 35px;
+}
+
+.authSubtitle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.authTopDivider {
+  margin: 15px 0 15px;
+  border: 0;
+  border-top: 1px solid rgba(103, 103, 103, 0.678);
+}
+
+/* ---- Tabs (로그인/회원가입) ---- */
+.authTabRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.authTab {
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #2a2a2a;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 700;
+}
+
+.authTab.active {
+  background: #1b1b1b;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ---- Form ---- */
+.authForm {
+  margin-top: 18px;
+}
+
+.authGroup {
+  margin-bottom: 14px;
+}
+
+.authLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 8px;
+}
+
+.authInput.form-control {
+  height: 46px;
+  border-radius: 10px;
+  background: #2a2a2a !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  padding: 10px 12px;
+  opacity: 0.8;
+  outline: none;
+}
+
+.authInput.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ---- Options row ---- */
+.authOptionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.authCheck {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.authCheck:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.authCheck input {
+  width: 16px;
+  height: 16px;
+  accent-color: rgb(26, 28, 76);
+}
+
+.authLink {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+}
+
+.authLink:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* ---- Divider ---- */
+.authDivider {
+  margin: 16px 0 14px;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---- Error ---- */
+.authError {
+  color: #ff5a6a;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* ---- Primary button ---- */
+.authPrimaryBtn.btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  font-weight: 800;
+  border: none;
+  background: #31296d;
+}
+
+.authPrimaryBtn.btn:hover {
+  background: rgb(26, 28, 76);
+}
+
+.authPrimaryBtn.btn:disabled {
+  opacity: 0.7;
+}
+
+/* =========================
+   Auth Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+  .authDialog {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .authHeader {
+    padding: 12px 24px 0;
+  }
+
+  .authBody {
+    padding: 12px 24px 28px;
+  }
+}
+
+/* 화면 터치 UX */
+@media (max-width: 480px) {
+  .authDialog {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .authContent {
+    border-radius: 12px;
+  }
+
+  .authHeader {
+    padding: 12px 16px 0;
+  }
+
+  .authBody {
+    padding: 12px 16px 22px;
+  }
+
+  .authTitle {
+    font-size: 16px;
+  }
+
+  .authSubtitle {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .authTopDivider {
+    margin: 12px 0 12px;
+  }
+
+  .authTabRow {
+    gap: 8px;
+  }
+
+  .authTab {
+    height: 42px;
+    font-size: 13px;
+  }
+
+  .authInput.form-control {
+    height: 44px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .authOptionRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .authLink {
+    font-size: 13px;
+  }
+
+  .authPrimaryBtn.btn {
+    height: 46px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .authHeader {
+    padding: 10px 12px 0;
+  }
+
+  .authBody {
+    padding: 10px 12px 18px;
+  }
+
+  .authTab {
+    height: 40px;
+  }
+
+  .authInput.form-control {
+    height: 42px;
+  }
+
+  .authPrimaryBtn.btn {
+    height: 44px;
+  }
+
+}

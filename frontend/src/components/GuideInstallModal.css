@@ -1,0 +1,82 @@
+.guide-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.guide-modal {
+  width: min(680px, 96vw);
+  border-radius: 18px;
+  background: rgba(20, 20, 24, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);
+  color: #fff;
+  overflow: hidden;
+}
+
+.guide-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.guide-modal-header h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.guide-modal-close {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.guide-modal-body {
+  padding: 16px 18px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.guide-modal-body code {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.guide-steps {
+  margin: 10px 0 0 18px;
+}
+
+.guide-note {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.guide-modal-footer {
+  padding: 12px 18px 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.guide-modal-ok {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+}

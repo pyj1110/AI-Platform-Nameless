@@ -1,0 +1,104 @@
+.metricPanel {
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 80px;
+}
+
+.metricTitle {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* slider */
+.eloSlider {
+  overflow: hidden;
+  width: 100%;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.eloSlider:active {
+  cursor: grabbing;
+}
+
+.eloSliderTrack {
+  display: flex;
+  width: 300%;
+  transition: transform 0.3s ease;
+}
+
+.eloSlide {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.eloPageTitle {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+  letter-spacing: 0.6px;
+  margin: 6px 0 18px;
+}
+
+/* row */
+.eloRow {
+  display: grid;
+  grid-template-columns: 280px 1fr 60px;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.eloName {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eloBar {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.eloBarFill {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 999px;
+}
+
+.eloValue {
+  text-align: right;
+  font-size: 15px;
+}
+
+/* indicator */
+.eloIndicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.eloDot {
+  width: 9px;
+  height: 9px;
+  min-width: 9px;
+  min-height: 9px;
+  border-radius: 50%;
+  background: #555;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+.eloDot.active {
+  background: #fff;
+}

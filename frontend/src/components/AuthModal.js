@@ -3,6 +3,36 @@ import { Modal, Form } from "react-bootstrap";
 import "./AuthModel.css";
 import { login, register } from "../api/auth";
 
+/* =========================
+        최성민 START
+========================= */
+
+//카카오 OAuth 설정
+// 카카오 REST API 키 (.env 파일에 저장된 값)
+const KAKAO_REST_KEY = process.env.REACT_APP_KAKAO_REST_KEY;
+
+// 카카오 로그인 후 돌아올 백엔드 콜백 주소
+const KAKAO_REDIRECT_URI = "http://localhost:5000/auth/kakao/callback";
+
+/**
+ * 현재 모드(login / signup)에 따라
+ * 카카오 인증 URL을 만들어주는 함수
+ */
+
+function getKakaoAuthUrl(mode) {
+  return (
+    "https://kauth.kakao.com/oauth/authorize" +
+    `?client_id=${KAKAO_REST_KEY}` +
+    `&redirect_uri=${encodeURIComponent(KAKAO_REDIRECT_URI)}` +
+    "&response_type=code" +
+    `&state=${mode}`
+  );
+}   
+
+/* =========================
+        최성민 END
+========================= */
+
 export default function AuthModal({ show, onHide, onAuthed }) {
   const [mode, setMode] = useState("login"); // login | signup
 
@@ -214,6 +244,28 @@ export default function AuthModal({ show, onHide, onAuthed }) {
             {loading ? "처리 중..." : mode === "login" ? "로그인" : "회원가입"}
           </button>
         </Form>
+
+          {/* =========================
+                     최성민 START
+            ========================= */}
+
+          {/* ===============================                                 
+               카카오 로그인 / 회원가입 버튼
+            - mode === login  → 카카오 로그인
+            - mode === signup → 카카오 회원가입
+            =============================== */}
+        <div className="authSocial">
+         <a
+           href={getKakaoAuthUrl(mode)}
+           className="kakaoBtn"
+         >
+          {mode === "login" ? "카카오로 로그인" : "카카오로 회원가입"}
+         </a>
+        </div>  
+        
+          {/* =========================
+                     최성민 END
+            ========================= */}
       </Modal.Body>
     </Modal>
   );

@@ -7,6 +7,27 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+  /* =========================
+          최성민 START
+   ========================= */
+
+// Kakao OAuth Redirect 처리 
+// URL 쿼리에서 access_token 추출
+// localStorage 저장 후 쿼리 제거
+const params = new URLSearchParams(window.location.search);              
+const accessToken = params.get("access_token");
+
+if (accessToken) {
+  // JWT 저장 (로그인 상태 유지용)
+  localStorage.setItem("access_token", accessToken);
+
+  // URL 정리 (쿼리 제거)
+  window.history.replaceState({}, document.title, "/");
+}        
+/* =========================
+          최성민 END
+   ========================= */           
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

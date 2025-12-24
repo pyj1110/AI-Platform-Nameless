@@ -15,9 +15,24 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False, index=True)
-    password_hash = db.Column(db.String(255), nullable=False)
+    password_hash = db.Column(db.String(255), nullable=True) # OAuth 로그인 유저(kakao)는 비밀번호가 없으므로 nullable=True로 바꿈 최성민
 
     marketing_opt_in = db.Column(db.Boolean, default=False, nullable=False)
+
+    #=========================
+    #   최성민 START
+    #=========================
+   
+    # 인증 제공자 (local | kakao) 
+    provider = db.Column(db.String(20), nullable=False, default="local")
+
+    # 카카오 OAuth 사용자 ID (local 유저는 NULL) 최성민 
+    kakao_id = db.Column(db.String(50), unique=True, nullable=True)
+
+    #=========================
+    #   최성민 END
+    #=========================
+
 
     created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
     updated_at = db.Column(

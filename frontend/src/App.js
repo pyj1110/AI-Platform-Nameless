@@ -314,6 +314,52 @@ export default function App() {
   const [guideExtensionReady, setGuideExtensionReady] = useState(false);
   const [guideInstallOpen, setGuideInstallOpen] = useState(false);
 
+  /* =========================
+   최성민 START
+   ========================= */
+  
+  // 로그인 상태 복구 & 카카오 OAuth Redirect 처리 
+    useEffect(() => {
+  // URL 쿼리에서 access_token 추출 (카카오 OAuth Redirect 직후)
+  const params = new URLSearchParams(window.location.search);
+  const tokenFromUrl = params.get("access_token");
+
+  // localStorage에 저장된 access_token (기존 로그인 유지용)
+  const tokenFromStorage = localStorage.getItem("access_token");
+
+  // URL 토큰 우선, 없으면 저장된 토큰 사용
+  const token = tokenFromUrl || tokenFromStorage;
+  if (!token) return; // 로그인 정보 없음 → 종료
+
+  // 카카오 로그인으로 전달된 토큰이면 localStorage에 저장
+  if (tokenFromUrl) {
+    localStorage.setItem("access_token", tokenFromUrl);
+
+    // 주소창에서 토큰 제거 (보안 및 URL 정리 목적)
+    window.history.replaceState({}, "", "/");
+  }
+
+  // access_token으로 현재 로그인 사용자 정보 조회
+  fetch("http://localhost:5000/api/auth/me", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then(res => (res.ok ? res.json() : null))
+    .then(data => {
+      if (data?.user) {
+        // 로그인 상태 복구 → Header, Mypage 등 즉시 반영
+        setUser(data.user);
+      }
+    });
+}, []);
+
+/* =========================
+   최성민 END
+   ========================= */
+
+
+
   function onmenuclick(categoryname) {
     setmenuselect(categoryname);
   }

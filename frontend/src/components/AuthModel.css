@@ -296,3 +296,29 @@ Modal frame
   }
 
 }
+
+
+  /* =========================
+          최성민 START
+   ========================= */
+
+/* 카카오 로그인/회원가입 버튼*/
+.authSocial {
+  margin-top: 16px;
+}
+
+.kakaoBtn {
+  display: block;
+  width: 100%;
+  background-color: #FEE500;
+  color: #000;
+  text-align: center;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ /* =========================
+          최성민 END
+   ========================= */

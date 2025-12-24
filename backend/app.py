@@ -1,9 +1,20 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from flask_cors import CORS
 import os
 import time
 import requests
 import sys
+
+#=========================
+#   최성민 START
+#=========================
+
+# dotenv 로드 (.env 파일 읽기) 
+from dotenv import load_dotenv
+load_dotenv()        
+#=========================
+#   최성민 END
+#=========================
 
 from flask_jwt_extended import (
     JWTManager, create_access_token, jwt_required, get_jwt_identity
@@ -19,6 +30,29 @@ app.url_map.strict_slashes = False
 # =========================
 # DB / JWT Config
 # =========================
+
+#=========================
+#   최성민 START
+#=========================
+
+# Kakao OAuth Config 
+# 카카오 REST API 키 (카카오 개발자 콘솔에서 발급)
+KAKAO_REST_KEY = os.getenv("KAKAO_REST_KEY", "").strip()
+
+# 카카오 로그인 후 redirect 되는 백엔드 콜백 주소
+KAKAO_REDIRECT_URI = os.getenv(                                                             
+    "KAKAO_REDIRECT_URI",
+    "http://localhost:5000/auth/kakao/callback"
+)
+
+# 카카오 토큰 요청 / 사용자 정보 요청 URL
+KAKAO_TOKEN_URL = "https://kauth.kakao.com/oauth/token"
+KAKAO_USER_URL = "https://kapi.kakao.com/v2/user/me"     
+
+#=========================
+#   최성민 END
+#=========================
+
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///local.db")
 app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -42,6 +76,39 @@ def json_error(status: int, message: str, **extra):
 def handle_unexpected_error(e):
     print("[SERVER ERROR]", repr(e))
     return json_error(500, "서버 내부 오류가 발생했습니다. 잠시 후 다시 시도해주세요.")
+
+#=========================
+#   최성민 START
+#=========================
+
+# Kakao OAuth Helper Functions 
+# 인가 코드(code)로 카카오 access token 요청
+def get_kakao_access_token(code: str):
+    payload = {
+        "grant_type": "authorization_code",
+        "client_id": KAKAO_REST_KEY,
+        "redirect_uri": KAKAO_REDIRECT_URI,
+        "code": code,
+    }
+
+    r = requests.post(KAKAO_TOKEN_URL, data=payload, timeout=10)
+    r.raise_for_status()
+    return r.json()
+
+
+# access token으로 카카오 사용자 정보 요청                                                          
+def get_kakao_user_info(access_token: str):
+    headers = {
+        "Authorization": f"Bearer {access_token}"
+    }
+
+    r = requests.get(KAKAO_USER_URL, headers=headers, timeout=10)
+    r.raise_for_status()
+    return r.json()            
+
+#=========================
+#   최성민 END
+#=========================                                                       
 
 
 def ensure_users_name_column():
@@ -67,6 +134,81 @@ with app.app_context():
 # =========================
 # AUTH APIs
 # =========================
+
+#=========================
+#   최성민 START
+#=========================
+
+# Kakao OAuth Callback 
+@app.get("/auth/kakao/callback")
+def kakao_callback():
+    """
+    카카오 로그인 완료 후 호출되는 콜백
+    - code: 카카오 인가 코드
+    - state: login | signup (프론트에서 전달)
+    """
+
+    # 카카오에서 전달한 query parameter 받기
+    code = request.args.get("code")
+    state = request.args.get("state", "login")
+
+    if not code:
+        return json_error(400, "카카오 인증 코드가 없습니다.")
+
+    try:
+        # access token 요청
+        token_data = get_kakao_access_token(code)
+        access_token = token_data.get("access_token")
+
+        if not access_token:
+            return json_error(401, "카카오 access token 발급 실패")
+
+        # 카카오 사용자 정보 요청
+        kakao_user = get_kakao_user_info(access_token)
+
+        kakao_id = kakao_user.get("id")
+        kakao_account = kakao_user.get("kakao_account", {})
+        profile = kakao_account.get("profile", {})
+
+        email = kakao_account.get("email")
+        nickname = profile.get("nickname", "카카오 사용자")
+
+        if not kakao_id:
+            return json_error(400, "카카오 사용자 정보를 가져올 수 없습니다.")
+
+        # 기존 카카오 유저 조회
+        user = User.query.filter_by(kakao_id=str(kakao_id)).first()
+
+        if not user:
+            user = User(
+                name=nickname,
+                email=email or f"kakao_{kakao_id}@kakao.local",
+                provider="kakao",
+                kakao_id=str(kakao_id),
+                marketing_opt_in=False,
+            )
+            db.session.add(user)
+            db.session.commit()
+
+        # JWT 발급
+        access_token = create_access_token(identity=str(user.id))
+
+        return redirect(
+            f"http://localhost:3000/?access_token={access_token}")              
+           
+        
+    except requests.exceptions.RequestException as e:
+        print("[KAKAO API ERROR]", repr(e))
+        return json_error(502, "카카오 API 통신 오류")
+
+    except Exception as e:
+        print("[KAKAO CALLBACK ERROR]", repr(e))
+        return json_error(500, "카카오 로그인 처리 중 오류 발생")     
+
+#=========================
+#   최성민 END
+#========================= 
+                         
 @app.post("/api/auth/register")
 def auth_register():
     data = request.get_json(silent=True) or {}
